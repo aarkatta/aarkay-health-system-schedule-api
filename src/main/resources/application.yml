@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/healthsystem
+    username: postgres
+    password: postgres
+  data:
+    r2dbc:
+      resources:
+        enabled: false
+
+server:
+  port: 8080
