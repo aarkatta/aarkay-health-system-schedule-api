@@ -10,3 +10,14 @@ spring:
 
 server:
   port: 8080
+
+# FHIR Server Configuration
+fhir:
+  server:
+    # Using HAPI FHIR public test server
+    base-url: http://hapi.fhir.org/baseR4
+    # Alternative: Use local HAPI FHIR server
+    # base-url: http://localhost:8090/fhir
+  client:
+    connection-timeout: 10000
+    socket-timeout: 10000
